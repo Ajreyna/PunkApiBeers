@@ -7,12 +7,10 @@ import { IBeer } from './i-beer';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  beers: IBeer[]= [];
-  constructor (private dataService: DataService){}
+export class AppComponent  {
+  
+  constructor (){}
 
-  async ngOnInit(): Promise<void> {
-    this.beers = await this.dataService.getBeers();
-  }
+  ngOnInit(){}
 
 }
